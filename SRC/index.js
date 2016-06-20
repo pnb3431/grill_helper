@@ -22,12 +22,6 @@ var AlexaSkill = require('./AlexaSkill'),
 
 var APP_ID = undefined; //OPTIONAL: replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
 
-/**
- * MinecraftHelper is a child of AlexaSkill.
- * To read more about inheritance in JavaScript, see the link below.
- *
- * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript#Inheritance
- */
 var HowTo = function () {
     AlexaSkill.call(this, APP_ID);
 };

@@ -17,7 +17,7 @@ module.exports = {
     "rib-eye":"a three quarter inch thick rib-eye, should be grilled for 4 to 6 minutes over direct high heat.  A one inch thick rib-eye, should be grilled 6 to 8 minutes over direct high heat.  A two inch thick rib-eye should be grilled 14 to 18 minutes, with 6 to 8 minutes over direct high heat, and then 8 to 10 minutes over indirect high heat.",
     "t-bone":"a three quarter inch thick t-bone, should be grilled for 4 to 6 minutes over direct high heat.  A one inch thick t-bone, should be grilled 6 to 8 minutes over direct high heat.  A two inch thick t-bone should be grilled 14 to 18 minutes, with 6 to 8 minutes over direct high heat, and then 8 to 10 minutes over indirect high heat.",
     "filet mignon":"a three quarter inch thick filet mignon, should be grilled for 4 to 6 minutes over direct high heat.  A one inch thick filet mignon, should be grilled 6 to 8 minutes over direct high heat.  A two inch thick filet mignon should be grilled 14 to 18 minutes, with 6 to 8 minutes over direct high heat, and then 8 to 10 minutes over indirect high heat.",
-    "beef tenerloin":"a beef tenderloin of 3 to 4 pounds, should be grilled for 45 to 60 minutes over indirect high heat.",
+    "beef tenderloin":"a beef tenderloin of 3 to 4 pounds, should be grilled for 45 to 60 minutes over indirect high heat.",
     "flank steak":"a flank steak of 1 and a half to 2 pounds, and three quarters of an inch thick should be grilled for 8 to 10 minutes over direct medium heat",
     "ground beef patty":"a hamburger that is three quarters of an inch thick, should be grilled for 8 to 10 minutes, over direct medium heat",
     "hamburger":"a hamburger that is three quarters of an inch thick, should be grilled for 8 to 10 minutes, over direct medium heat",
@@ -32,7 +32,7 @@ module.exports = {
     "baby back ribs":"baby back ribs should be grilled for one and a half to two hours over indirect medium heat",
     "spareribs":"baby back ribs should be grilled for one and a half to two hours over indirect medium heat",
     "country style ribs":"baby back ribs should be grilled for one and a half to two hours over indirect medium heat",
-    "pork tenerloin":"a pork tenderloin of 1 pound, should be grilled for 30 minutes, seared for 5 minutes over direct high heat followed by 25 minutes over indirect medium heat.",
+    "pork tenderloin":"a pork tenderloin of 1 pound, should be grilled for 30 minutes, seared for 5 minutes over direct high heat followed by 25 minutes over indirect medium heat.",
     "chicken pieces":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
     "bone in chicken pieces":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
     "bone in chicken":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
@@ -72,6 +72,6 @@ module.exports = {
     "corn":"corn in the husk should be grilled 25 to 30 minutes overdirect medium heat.  Corn that has been husked should be grilled 10 to 15 minutes over direct medium heat",
     "mushrooms":"shiitake or button mushrooms should be grilled 8 to 10 minutes over direct medium heat.  Portabello mushrooms should be grilled 10 to 15 minutes over direct medium heat",
     "onion":"Onions that are halved should be grilled 35 to 40 minutes over indirect medium heat.  Half inch slices of onions should be grilled 8 to 12 minutes over direct medium heat",
-    "potato":"whole potatoes should be grilled 45 to 60 minutes over indirect medium heat.  Half inch slices should be cooked 9 to 11 minutes, first parboiling for 3 minutes, and then grilled 6 to 8 minutes over direct medium heat"
+    "potato":"whole potatoes should be grilled 45 to 60 minutes over indirect medium heat.  Half inch slices should be cooked 9 to 11 minutes, first parboil for 3 minutes, then grill 6 to 8 minutes over direct medium heat"
     
 };

@@ -24,54 +24,54 @@ module.exports = {
     "burger":"a hamburger that is three quarters of an inch thick, should be cooked for 8 to 10 minutes, over direct medium heat",
     "bratwurst":"a bratwurst should be cooked for 20 to 25 minutes over direct low heat",
     "brat":"a bratwurst should be cooked for 20 to 25 minutes over direct low heat",
-    "italian sausage":"a bratwurst should be cooked for 20 to 25 minutes over direct low heat",
-    "polish sausage":"a bratwurst should be cooked for 20 to 25 minutes over direct low heat",
-pork chop
-boneless pork chop
-bone in pork chop
-baby back ribs
-spareribs
-country style ribs
-pork tenerloin
-chicken pieces
-bone in chicken pieces
-bone in chicken
-bone in chicken thighs
-bone in chicken breasts
-bone in chicken legs
-chicken drum stick
-bone in chicken wings
-chicken wings
-whole chicken
-cornish game hen
-turkey
-whole turkey
-fish
-fish fillet 
-fish steak
-halibut
-halibut fillet
-halibut steak
-red snapper
-red snapper fillet
-red snapper steak
-salmon
-salmon fillet
-salmon steak
-sea bass
-sea bass fillet
-sea bass steak
-swordfish
-swordfish fillet
-swordfish steak
-tuna
-tuna fillet
-tuna steak
-shrimp
-asparagus
-corn
-mushrooms
-onion 
-potato
+    "italian sausage":"an italian sausage should be cooked for 20 to 25 minutes over direct low heat",
+    "polish sausage":"a polish sausage should be cooked for 20 to 25 minutes over direct low heat",
+    "pork chop":"a three quarter inch thick pork chop, should be cooked for 4 to 6 minutes over direct high heat.  A one and a quarter to one and a half inch thick pork chop, should be cooked 10 to 12 minutes, searing for 6 minutes over direct high heat, and grilled 4 to 6 minutes over indirect high heat",
+    "boneless pork chop":"a three quarter inch thick pork chop, should be cooked for 4 to 6 minutes over direct high heat.  A one and a quarter to one and a half inch thick pork chop, should be cooked 10 to 12 minutes, searing for 6 minutes over direct high heat, and grilled 4 to 6 minutes over indirect high heat",
+    "bone in pork chop":"a three quarter inch thick pork chop, should be cooked for 4 to 6 minutes over direct high heat.  A one and a quarter to one and a half inch thick pork chop, should be cooked 10 to 12 minutes, searing for 6 minutes over direct high heat, and grilled 4 to 6 minutes over indirect high heat",
+    "baby back ribs":"baby back ribs should be cooked for one and a half to two hours over indirect medium heat",
+    "spareribs":"baby back ribs should be cooked for one and a half to two hours over indirect medium heat",
+    "country style ribs":"baby back ribs should be cooked for one and a half to two hours over indirect medium heat",
+    "pork tenerloin":"a pork tenderloin of 1 pound, should be cooked for 30 minutes, seared for 5 minutes over direct high heat followed by 25 minutes over indirect medium heat.",
+    "chicken pieces"
+    "bone in chicken pieces"
+    "bone in chicken"
+    "bone in chicken thighs"
+    "bone in chicken breasts"
+    "bone in chicken legs"
+    "chicken drum stick"
+    "bone in chicken wings"
+    "chicken wings"
+    "whole chicken"
+    "cornish game hen"
+    "turkey"
+    "whole turkey"
+    "fish"
+    "fish fillet" 
+    "fish steak"
+    "halibut"
+    "halibut fillet"
+    "halibut steak"
+    "red snapper"
+    "red snapper fillet"
+    "red snapper steak"
+    "salmon"
+    "salmon fillet"
+    "salmon steak"
+    "sea bass"
+    "sea bass fillet"
+    "sea bass steak"
+    "swordfish"
+    "swordfish fillet"
+    "swordfish steak"
+    "tuna"
+    "tuna fillet"
+    "tuna steak"
+    "shrimp"
+    "asparagus"
+    "corn"
+    "mushrooms"
+    "onion" 
+    "potato"
     
 };

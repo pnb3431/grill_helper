@@ -1,0 +1,26 @@
+{
+  "name": "grilling_guide",
+  "version": "1.0.0",
+  "description": "gives grilling advice",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.72.0",
+    "universal-analytics": "^0.3.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnb3431/grill_helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnb3431/grill_helper/issues"
+  },
+  "homepage": "https://github.com/pnb3431/grill_helper#readme"
+}

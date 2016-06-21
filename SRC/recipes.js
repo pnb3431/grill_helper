@@ -34,6 +34,7 @@ module.exports = {
     "country style ribs":"baby back ribs should be grilled for one and a half to two hours over indirect medium heat",
     "pork tenderloin":"a pork tenderloin of 1 pound, should be grilled for 30 minutes, seared for 5 minutes over direct high heat followed by 25 minutes over indirect medium heat.",
     "chicken pieces":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
+    "chicken":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat, if you are looking to grill boneless, or whole chicken, please specify that.",
     "bone in chicken pieces":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
     "bone in chicken":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
     "bone in chicken thighs":"bone in chicken pieces should be grilled for 36 to 40 minutes, with 6 to 10 minutes over direct low heat, then 30 minutes over indirect medium heat",
@@ -72,6 +73,8 @@ module.exports = {
     "corn":"corn in the husk should be grilled 25 to 30 minutes overdirect medium heat.  Corn that has been husked should be grilled 10 to 15 minutes over direct medium heat",
     "mushrooms":"shiitake or button mushrooms should be grilled 8 to 10 minutes over direct medium heat.  Portabello mushrooms should be grilled 10 to 15 minutes over direct medium heat",
     "onion":"Onions that are halved should be grilled 35 to 40 minutes over indirect medium heat.  Half inch slices of onions should be grilled 8 to 12 minutes over direct medium heat",
-    "potato":"whole potatoes should be grilled 45 to 60 minutes over indirect medium heat.  Half inch slices should be cooked 9 to 11 minutes, first parboil for 3 minutes, then grill 6 to 8 minutes over direct medium heat"
+    "potato":"whole potatoes should be grilled 45 to 60 minutes over indirect medium heat.  Half inch slices should be cooked 9 to 11 minutes, first parboil for 3 minutes, then grill 6 to 8 minutes over direct medium heat",
+    "pork":"please specify the cut of pork you are wanting to grill",
+    "vegtables":"please specify the type of vegtable you are wanting to grill"
     
 };

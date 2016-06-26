@@ -8,17 +8,13 @@
     or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 
-/*
- * Examples:
- * One-shot model:
- *  User: "Alexa, ask Minecraft Helper how to make paper."
- *  Alexa: "(reads back recipe for paper)"
- */
+
 
 'use strict';
 
 var AlexaSkill = require('./AlexaSkill'),
-    recipes = require('./recipes');
+    
+    storage = require('./storage');
 
 
 
@@ -29,6 +25,8 @@ var HowTo = function () {
 };
 var express = require('express');
 var request = require('request');
+
+
 
 var app = express();
 
@@ -83,17 +81,20 @@ HowTo.prototype.intentHandlers = {
         if (itemSlot && itemSlot.value){
             itemName = itemSlot.value.toLowerCase();
         }
-
+        console.log("itemName: "  + itemName)
         var cardTitle = "Instructions to Grill " + itemName,
-            recipe = recipes[itemName],
             speechOutput,
             repromptOutput;
-        if (recipe) {
+        
+        session.attributes.currentItemName = itemName.recipe;
+        storage.loadItemName(session, itemName, function(recipe) {
+        
+        if (recipe.Item.recipe.S != "") {
             speechOutput = {
-                speech: recipe,
+                speech: recipe.Item.recipe.S,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            response.tellWithCard(speechOutput, cardTitle, recipe);
+            response.tellWithCard(speechOutput, cardTitle, recipe.Item.recipe.S);
         } else {
             var speech;
             if (itemName) {
@@ -111,6 +112,7 @@ HowTo.prototype.intentHandlers = {
             };
             response.ask(speechOutput, repromptOutput);
         }
+        });
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {

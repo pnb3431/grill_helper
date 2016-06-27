@@ -78,27 +78,23 @@ HowTo.prototype.intentHandlers = {
     "RecipeIntent": function (intent, session, response) {
         var itemSlot = intent.slots.Item,
             itemName;
-            console.log("itemSlot: " + JSON.stringify(itemSlot));
         if (itemSlot && itemSlot.value){
             itemName = itemSlot.value.toLowerCase();
-            console.log("itemName: " + JSON.stringify(itemName));
         }
-        console.log("itemName: "  + itemName);
+        console.log("itemName: "  + itemName)
         var cardTitle = "Instructions to Grill " + itemName,
             speechOutput,
             repromptOutput;
+        
         session.attributes.currentItemName = itemName.recipe;
         storage.loadItemName(session, itemName, function(recipe) {
         
-        console.log("recipe: " + JSON.stringify(recipe));
-        if (Object.keys(recipe).length != 0) {
+        if (itemSlot == itemName) {
             speechOutput = {
                 speech: recipe.Item.recipe.S,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            
             response.tellWithCard(speechOutput, cardTitle, recipe.Item.recipe.S);
-            
         } else {
             var speech;
             if (itemName) {
@@ -116,9 +112,8 @@ HowTo.prototype.intentHandlers = {
             };
             response.ask(speechOutput, repromptOutput);
         }
-        });  
+        });
     },
-   
 
     "AMAZON.StopIntent": function (intent, session, response) {
         var speechOutput = "Goodbye";

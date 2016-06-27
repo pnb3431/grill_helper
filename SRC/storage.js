@@ -50,6 +50,7 @@ var storage = (function () {
                 var currentItemName;
                 if (err) {
                     console.log(err, err.stack);
+                   
                     //WTF!
                     currentItemName = new ItemName(session);
                     session.attributes.currentItemName = currentItemName.data;
@@ -58,6 +59,8 @@ var storage = (function () {
                     console.log(data);
                     //onsole.log(moment());
                     currentItemName = new ItemName(session, data);
+                    console.log("data: " + data);
+                    console.log("currentItemName: " + JSON.stringify(currentItemName));
                     callback(data);
                 } else {
                     // This should nevere ever happen!!!

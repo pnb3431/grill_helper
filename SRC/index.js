@@ -26,8 +26,6 @@ var HowTo = function () {
 var express = require('express');
 var request = require('request');
 
-
-
 var app = express();
 
 var GA_TRACKING_ID = 'UA-78535764-2';
@@ -97,7 +95,9 @@ HowTo.prototype.intentHandlers = {
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
             
-            response.tellWithCard(speechOutput, cardTitle, recipe.Item.recipe.S);
+            trackEvent("intent","RecipeIntent","Slot",itemSlot, function () {
+                response.tellWithCard(speechOutput, cardTitle, recipe.Item.recipe.S);
+            });
             
         } else {
             var speech;
@@ -114,7 +114,9 @@ HowTo.prototype.intentHandlers = {
                 speech: "What else can I help you grill?",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            response.ask(speechOutput, repromptOutput);
+            trackEvent("intent","RecipeIntent","Slot",itemSlot, function () {
+                response.ask(speechOutput, repromptOutput);
+            });    
         }
         });  
     },

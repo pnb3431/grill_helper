@@ -18,7 +18,7 @@ var AlexaSkill = require('./AlexaSkill'),
 
 
 
-var APP_ID = undefined; //OPTIONAL: replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
+var APP_ID = undefined; //OPTIONAL: replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]'; 
 
 var HowTo = function () {
     AlexaSkill.call(this, APP_ID);

@@ -54,7 +54,7 @@ var storage = (function () {
                     currentItemName = new ItemName(session);
                     session.attributes.currentItemName = currentItemName.data;
                     callback(currentItemName);
-                    });
+                    
                 } else if (data) {
                     console.log(data);
                     //onsole.log(moment());

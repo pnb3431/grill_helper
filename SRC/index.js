@@ -44,6 +44,7 @@ function trackEvent(category, action, label, value, cb) {
     ev: value, // Event value.
   };
 
+
   request.post(
     'http://www.google-analytics.com/collect', {
       form: data
@@ -95,7 +96,7 @@ HowTo.prototype.intentHandlers = {
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
             
-            trackEvent("intent","RecipeIntent","Slot",itemSlot, function () {
+            trackEvent("intent","RecipeIntent",itemName, 1, function () {
                 response.tellWithCard(speechOutput, cardTitle, recipe.Item.recipe.S);
             });
             
@@ -114,7 +115,7 @@ HowTo.prototype.intentHandlers = {
                 speech: "What else can I help you grill?",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            trackEvent("intent","RecipeIntent","Slot",itemSlot, function () {
+            trackEvent("intent","RecipeIntent",itemName, 1, function () {
                 response.ask(speechOutput, repromptOutput);
             });    
         }
@@ -124,12 +125,18 @@ HowTo.prototype.intentHandlers = {
 
     "AMAZON.StopIntent": function (intent, session, response) {
         var speechOutput = "Goodbye";
-        response.tell(speechOutput);
+        trackEvent("intent","AMAZON.StopIntent","stop", 1, function () {
+            response.tell(speechOutput);
+    
+        });
     },
+    
 
     "AMAZON.CancelIntent": function (intent, session, response) {
         var speechOutput = "Goodbye";
-        response.tell(speechOutput);
+        trackEvent("intent","AMAZON.CancelIntent","cancel", 1, function () {
+            response.tell(speechOutput);
+        });
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
@@ -143,20 +150,14 @@ HowTo.prototype.intentHandlers = {
             speech: repromptText,
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
         };
-        response.ask(speechOutput, repromptOutput);
+        trackEvent("intent","AMAZON.HelpIntent","help", 1, function () {
+            response.ask(speechOutput, repromptOutput);
+        });
     },
     
     "AMAZON.NoIntent": function (intent, session, response) {
-    trackEvent(
-      'Intent',
-      'AMAZON.NoIntent',
-      'na',
-      '100', // Event value must be numeric.
-      function(err) {
-        if (err) { 
-            return next(err); 
-        }
-        var speechOutput = "Okay.";
+     var speechOutput = "Okay.";
+    trackEvent('intent', 'AMAZON.NoIntent', 'na','1', function(){
         response.tell(speechOutput);
       });
     }

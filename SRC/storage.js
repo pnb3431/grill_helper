@@ -50,11 +50,11 @@ var storage = (function () {
                 var currentItemName;
                 if (err) {
                     console.log(err, err.stack);
-                   
                     //WTF!
                     currentItemName = new ItemName(session);
                     session.attributes.currentItemName = currentItemName.data;
                     callback(currentItemName);
+                    });
                 } else if (data) {
                     console.log(data);
                     //onsole.log(moment());
